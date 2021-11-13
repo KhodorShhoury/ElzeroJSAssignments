@@ -14,6 +14,6 @@ console.log(mixarr)
 let myString = "EElllzzzzzzzeroo";
 
 let myStringArr= myString.split("").filter(function(ele,index,arr){
-     return ele != ++index
+     return ele !== 
 }).join("")
 console.log(myStringArr)
