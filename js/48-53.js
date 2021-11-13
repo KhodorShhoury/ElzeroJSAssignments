@@ -77,7 +77,7 @@ for(let i =start ; i<swappedName.length;i++){
           result += swappedName[i].toLowerCase()
      }else result+= swappedName[i].toUpperCase()
 }
-console.log(word);
+console.log(result);
 
 //7
  start = 0;
