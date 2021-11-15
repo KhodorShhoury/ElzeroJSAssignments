@@ -58,12 +58,9 @@ for (;;) {
 
  friends = ["Ahmed", "Sayed", "Eman", "Mahmoud", "Ameer", "Osama", "Sameh"];
 let letter = "a";
-
-for(let i = --letter.length;i<friends.length;i++){
-     if(friends[i].charAt(0)==letter.toUpperCase()){
-          continue
-     }
-     console.log(`${i}=>${friends[i]}`)
+let i = --letter.length;
+for(let friend of friends){
+     friend.startsWith(letter.toUpperCase()) ? "": console.log(`${++i}=>${friend}`)
 }
 
 //6

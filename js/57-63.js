@@ -60,7 +60,33 @@ function sayHello(theName, theGender) {
 
    //4
    
-
+   function showDetails(a, b, c) {
+     let info = [a, b, c],
+       name,
+       age,
+       avaliability,
+       sentance;
+   
+     for (let i = 0; i < 3; i++) {
+       typeof info[i] === "string"
+         ? (name = info[i])
+         : typeof info[i] === "number"
+         ? (age = info[i])
+         : typeof info[i] === "boolean"
+         ? (avaliability = info[i])
+         : "incorrect data type";
+     }
+   
+     avaliability === true
+       ? (sentance = "You are avaliable For Hire")
+       : (sentance = "You are not avaliable For Hire");
+   
+     console.log(`Hello ${name}, Your age Is ${age} , ${sentance}`);
+   }
+   showDetails("Osama", 38, true);
+   showDetails(38, "Osama", true);
+   showDetails(true, 38, "Osama");
+   showDetails(false, "Osama", 38);
 
    //5
    function createSelectBox(startYear, endYear) {

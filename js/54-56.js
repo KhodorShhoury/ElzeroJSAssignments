@@ -4,16 +4,13 @@
  index = 0;
 let counter = 0;
 
-
 while(counter<friends.length){
+
      if(typeof friends[counter]!=="number"){
           if(friends[counter].charAt(0)!=="A"){
-               console.log(friends[counter])
+               console.log(`${++index}==>${friends[counter]}`)
           }
      }
      counter++
 }
 
-// Output
-"1 => Sayed"
-"2 => Mahmoud"
