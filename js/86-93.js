@@ -30,15 +30,12 @@ document.getElementsByName("js");
 
  //3
 
-
- var input = document.querySelector("input");
- result = document.querySelector(".result");
-
-   
- input.addEventListener("input",()=>{
-result.innerHTML= `${parseFloat(input.value).toFixed(2)} USD Dollar = ${parseFloat(input.value * 15.6).toFixed(2)} Egyptian Pound`
- });
-
+ var USD=document.querySelector("input[name='dollar']");
+ var result = document.querySelector(".result");
+USD.setAttribute("min","0")
+ USD.addEventListener("input",function(){
+      result.textContent=`${parseFloat(USD.value).toFixed(2)} USD Dollar = ${parseFloat(USD.value * 15.6).toFixed(2) } Egyptian Pound`
+ })
  //4
 
  var firstEl = document.querySelector(".one");
@@ -69,38 +66,29 @@ result.innerHTML= `${parseFloat(input.value).toFixed(2)} USD Dollar = ${parseFlo
 
  //6
 
-  var elsCount = document.getElementsByName("elements")[0];
-  var form = document.forms;
-  var type = document.querySelector("select");
-  var text = document.getElementsByName("texts")[0];
-  var results = document.querySelector(".results");
- 
- elsCount.setAttribute("min", "0");
- 
- form[1].onsubmit = function (el) {
-     el.preventDefault();
-     document.querySelectorAll(".box").forEach(el => el.remove());
- 
-     for (let i = 1; i <= elsCount.value; i++) {
-         let myEl = document.createElement(type.value);
-         let myelText = document.createTextNode(text.value);
-         
-         myEl.className = "box";
-         myEl.title = "element";
-         myEl.id = `id-${i}`;
- 
-         myEl.style.display = "inline-block";
-         myEl.style.padding = "10px";
-         myEl.style.color = "#fff";
-         myEl.style.textAlign = "center";
-         myEl.style.width = "150px";
-         myEl.style.margin = "20px";
-         myEl.style.backgroundColor = "red";
-         
-         myEl.appendChild(myelText);
-         results.appendChild(myEl)
-     }
- };
+ var form = document.forms[1];
+ var eleCount=document.querySelector("input[name='elements']");
+ var eleText= document.querySelector("input[name='texts']");
+ var eleType=document.querySelector("select[name='type']");
+ var eleResult=document.querySelector(".results");
+eleCount.setAttribute("min","0")
+ form.addEventListener("submit",function(e) {
+      e.preventDefault();
+      document.querySelectorAll(".box").forEach(el => el.remove());
+      for(let i =1;i<=eleCount.value;i++){
+          var myEle=document.createElement(eleType.value);
+          myEle.textContent=eleText.value;
+          myEle.className="box";
+          myEle.title="Element";
+          myEle.id=`id-${i}`;
+          myEle.style.color="white";
+          myEle.style.backgroundColor="orange";
+          myEle.style.display="inline-block";
+          myEle.style.padding="10px 20px";
+          myEle.style.margin="10px";
+          eleResult.appendChild(myEle);
+      }
+     
+ })
 
- 
  
