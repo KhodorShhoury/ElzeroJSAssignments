@@ -5,6 +5,48 @@
      <meta http-equiv="X-UA-Compatible" content="IE=edge">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <title>ElzeroJSAssignments</title>
+     <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .assign {
+        text-align: center;
+        padding-top: 20px;
+      }
+      .assign input {
+        padding: 10px;
+        width: 300px;
+        border: 1px solid #ddd;
+      }
+      .assign input:focus {
+        outline: none;
+        border-color: #ccc;
+      }
+      .assign [title="Current"] {
+        padding: 20px;
+        margin: 10px auto;
+        width: 610px;
+        background-color: #f1f0f0;
+      }
+      .assign .classes-list {
+        padding: 20px;
+        margin: 10px auto;
+        width: 610px;
+        background-color: #f1f0f0;
+      }
+      .assign .classes-list h5 {
+        margin: 0 0 10px;
+        text-align: left;
+      }
+      .assign .classes-list div span {
+        background-color: #ff5722;
+        padding: 6px 10px 8px;
+        margin-right: 5px;
+        border-radius: 6px;
+        color: white;
+        display: inline-flex;
+      }
+    </style>
 </head>
 <body>
      <div>
@@ -68,23 +110,36 @@
   <input type="submit" name="create" value="Create" />
   <div class="results"></div>
 </form>
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Learn JavaScript</title>
-    <script>
-      // Your Code Here
-    </script>
-  </head>
-  <body>
     <a class="open" href="https://google.com">Google</a>
     <a class="open" href="https://elzero.org">Elzero</a>
     <a class="not" href="https://facebook.com">Facebook</a>
     <a class="linked" href="https://linkedin.com">Elzero</a>
-    <script src="main.js"></script>
-  </body>
-</html>
+
+    <div class="our-element">Our Element</div>
+<p></p>
+
+
+<div>
+  <span>Hello</span>
+  <!-- We Need The Next Text Without Spaces -->
+  Elzero
+</div>
+
+<div>Element</div>
+<span>Element</span>
+<p>Element</p>
+<article>Element</article>
+<section>Element</section>
+
+<div class="assign">
+  <input type="text" class="classes-to-add" placeholder="Add Classes" />
+  <input type="text" class="classes-to-remove" placeholder="Remove Classes" />
+  <div class="element current" title="Current">Current Element</div>
+  <div class="classes-list">
+    <h5>Current Element Class Lists</h5>
+    <div></div>
+  </div>
+</div>
         <!-- scripts-->
      <script src="js/1-9.js"></script>
      <script src="js/10-17.js"></script>
