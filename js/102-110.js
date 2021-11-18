@@ -41,7 +41,20 @@
            clearInterval(counter);
       }
  }
+//4
+ function count(){
+     eleDiv.textContent -=1;
+     if(eleDiv.textContent=="0"){
+        //  location.href = "https://elzero.org/";
+     }
+}
+//5
+function count(){
+     eleDiv.textContent -=1;
+     if(eleDiv.textContent=="0"){
+       // window.open("https://elzero.org/","","width=100","height=100");
+        clearInterval(counter)
+     }
+}
 
-
-
-
+ 
