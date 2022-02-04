@@ -4,8 +4,8 @@ let myFriends = ["Ahmed", "Elham", "Osama", "Gamal"];
 
 // Method 1
 console.log(myFriends.slice(num-num,num)); // ["Ahmed", "Elham", "Osama"];
-myFriends.pop();
 // Method 2
+myFriends.pop();
 console.log(myFriends); // ["Ahmed", "Elham", "Osama"];
 
 //2

@@ -4,56 +4,56 @@
 let links=document.querySelectorAll("a");
 
 links.forEach(function(link){
-  if(link.classList.contains("open")&&link.textContent=="Elzero"){
+  if(link.classList.contains("open") && link.textContent=="Elzero"){
    // link.click()
   }
 })
 
 //2 
 
-// var classAdd= document.querySelector(".classes-to-add");
-// var classRemove= document.querySelector(".classes-to-remove");
-// var curEle=document.querySelector(".current");
-// var classesList=document.querySelector(".classes-list h5+div");
+var classAdd= document.querySelector(".classes-to-add");
+var classRemove= document.querySelector(".classes-to-remove");
+var curEle=document.querySelector(".current");
+var classesList=document.querySelector(".classes-list h5+div");
 
-// //add class 
+//add class 
 
-// classAdd.addEventListener("blur",function() {
-//   if(curEle.classList.contains(classAdd.value)){
-//   classAdd.value=""
-// }else{
-//   curEle.classList.add(classAdd.value);
-//   showClasses()
-// }
+classAdd.addEventListener("blur",function() {
+  if(curEle.classList.contains(classAdd.value)){
+  classAdd.value=""
+}else{
+  curEle.classList.add(classAdd.value);
+  showClasses()
+}
 
-//   classAdd.value="";
-// })
+  classAdd.value="";
+})
 
 
-// // remove class
+// remove class
 
-// classRemove.addEventListener("blur",function(){
-//   curEle.classList.remove(classRemove.value);
+classRemove.addEventListener("blur",function(){
+  curEle.classList.remove(classRemove.value);
 
-//   classRemove.value="";
+  classRemove.value="";
   
-//   classesList.forEach(function(classAdded){
-//       classAdded.innerHTML == classAdd.value ? classAdded.remove() : classRemove.value=""
-//   })
-// })
+  classesList.forEach(function(classAdded){
+      classAdded.innerHTML == classAdd.value ? classAdded.remove() : classRemove.value=""
+  })
+})
 
-// // function showclass
+// function showclass
 
-// function showClasses() {
-//     var classAdded= document.createElement("div");
-//     classAdded.textContent=classAdd.value;
-//     classAdded.style.backgroundColor="orange";
-//     classAdded.style.color="white";
-//     classAdded.style.display="inline-block";
-//     classAdded.style.margin="10px";
-//     classAdded.style.padding="10px 20px";
-//     classesList.appendChild(classAdded)
-// }
+function showClasses() {
+    var classAdded= document.createElement("div");
+    classAdded.textContent=classAdd.value;
+    classAdded.style.backgroundColor="orange";
+    classAdded.style.color="white";
+    classAdded.style.display="inline-block";
+    classAdded.style.margin="10px";
+    classAdded.style.padding="10px 20px";
+    classesList.appendChild(classAdded)
+}
 
 
 // }
@@ -80,5 +80,9 @@ document.querySelector("div").lastChild.textContent.trim();
 //5
 
 addEventListener("click",function(e){
-  console.log(`This is ${e.target.nodeName}`);
+  if(e.target.nodeName = "P" ){
+    console.log(e.target.nodeName)
+  }else{
+    return 0
+  }
 });

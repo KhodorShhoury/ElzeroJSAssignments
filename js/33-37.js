@@ -32,7 +32,7 @@ if(num1 !== str2 && typeof num1 != typeof str2){
 if(str != str2 && typeof str == typeof str2){
      console.log("{str} Is The Same Type As {str2} But Not The Same Value")
 }
-
+//3
  num1 = 10;
  num2 = 30;
  num3 = "30";

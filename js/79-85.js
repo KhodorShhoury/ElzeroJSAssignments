@@ -38,8 +38,8 @@ console.log(myObj3.property);
 
 // fourth method
 
-let myObj4=Object.assign({},myObj3);
-myObj4["property"]="Method Four"
+let myObj4=Object.assign({},{property:"Method four"});
+
 console.log(myObj4.property);
 
 

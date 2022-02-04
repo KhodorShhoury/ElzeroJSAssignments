@@ -23,7 +23,7 @@ for(let i =start ; i>=end;i--){
      }else{
           console.log(i);
      }
-     if(i== `0${stop}`){
+     if(i == `0${stop}`){
           break
      }
 }
@@ -70,9 +70,8 @@ let swappedName = "elZerO";
 
  result = "";
 for(let i =start ; i<swappedName.length;i++){
-     if(swappedName[i]==swappedName[i].toUpperCase()){
-          result += swappedName[i].toLowerCase()
-     }else result+= swappedName[i].toUpperCase()
+     swappedName[i]==swappedName[i].toUpperCase() ? result += swappedName[i].toLowerCase() : result+= swappedName[i].toUpperCase()
+         
 }
 console.log(result);
 
