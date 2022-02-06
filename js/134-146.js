@@ -54,9 +54,12 @@ console.log(specialNames.match(/Os[0-9]*O/g));
 let phone = "+(995)-123 (4567)";
 console.log(/\+\(\d{3}\)-\d{3}\s\(\d{4}\)/.test(phone));
 //4
+let re = /https?:\/\/(?:[-\w]+\.)?([-\w]+)\.\w+(?:\.\w+)?\/?.*/i;
 /*
-https?:\/\/  starts with https://  or http://
-(?   non captured group
+https?:\/\/      https://  (: is optional);
+(?:[-\w]+\.)?    OPTIONAL: (?: => Non capturing group), ([]=> Match any character in the set), (-\w+)=> - then words then .;
+([-\w]+)\.\w+    - then words then . then words;
+(?:\.\w+)?\/?.*   (?:=> non caputred group) ,(\.\w+)=> . then words (OPTIONAL) ,\/?.* =>  / (OPTIONAL) then . (0 OR UNLIMITED TIMES);
 */
 //5
 
@@ -65,7 +68,7 @@ let date2 = "25 - 10 - 1982";
 let date3 = "25 10 1982";
 let date4 = "25 10 82";
 
-let re = /\d{2}(\/|\s)(\d{2}|-)(\/|\s)\d{2,4}(\s-\s\d{4})?/g; 
+ re = /\d{2}(\/|\s)(\d{2}|-)(\/|\s)\d{2,4}(\s-\s\d{4})?/g; 
 
 console.log(date1.match(re)); // "25/10/1982"
 console.log(date2.match(re)); // "25 - 10 - 1982"
@@ -77,7 +80,8 @@ let url2 = 'http://elzero.org';
 let url3 = 'https://elzero.org';
 let url4 = 'https://www.elzero.org';
 let url5 = 'https://www.elzero.org:8080/articles.php?id=100&cat=topics';
- re = /(https?|\w+)(.|:\/\/)\w+.\w+(:\d+\/\w+.\w+\?\w+=\d+&\w+=\w+)/g;
+re = /(https?:\/\/|\w+.)\w+.\w+:?(?:.*)?/g;
+// re = /(?:https?:\/\/(?:w+\.)?)?\w+\.org:?(?:.*)?/g
 console.log(url1.match(re));
 console.log(url2.match(re));
 console.log(url3.match(re));
