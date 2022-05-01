@@ -1,3 +1,4 @@
+/****************Still working ****************/
 //1
 class Car{
   constructor(name,model,price){
@@ -96,3 +97,13 @@ console.log(userThree.showData);
 
 console.log(userOne.c); // Prevent Accessing To Card Property Here
 // Undefined
+
+
+
+//4
+ String.prototype.addLove = function(){
+  return `I Love Elzero Web School`
+}
+
+let myStr = "Elzero";
+console.log(myStr.addLove()); // I Love Elzero Web School
