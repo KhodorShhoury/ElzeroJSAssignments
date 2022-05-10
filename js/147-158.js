@@ -38,7 +38,8 @@ class Phone {
 
 // Write Tablet Class Here
 
-class Tablet extends Phone{5
+class Tablet extends Phone{
+  
   constructor(name,serial,price,size){
     super(name,serial,price);
     this.size = size || "Unknown";
@@ -101,9 +102,48 @@ console.log(userOne.c); // Prevent Accessing To Card Property Here
 
 
 //4
- String.prototype.addLove = function(){
-  return `I Love Elzero Web School`
+
+
+ String.prototype.addLove = function(val){
+   return `Hello ${this} Web School`;
 }
+
 
 let myStr = "Elzero";
 console.log(myStr.addLove()); // I Love Elzero Web School
+
+
+//5
+ myObj = {
+  username: "Elzero",
+  id: 100,
+  score: 1000,
+  country: "Egypt",
+};
+
+// Write Your Code Here
+
+Object.defineProperties(myObj,{
+  score:{
+    writable : false,
+  },
+  id : {
+    enumerable: false,
+  },
+  
+})
+delete myObj.country;
+
+myObj.score = 500;
+
+for (let prop in myObj) {
+  console.log(`${prop} => ${myObj[prop]}`);
+}
+console.log(myObj);
+
+// Needed Output
+/*
+"username => Elzero"
+"score => 1000"
+{username: 'Elzero', score: 1000, id: 100}
+*/
