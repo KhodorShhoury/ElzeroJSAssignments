@@ -1,4 +1,4 @@
-/****************Still working ****************/
+
 //1
 class Car{
   constructor(name,model,price){
