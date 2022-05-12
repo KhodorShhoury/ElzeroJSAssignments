@@ -1,5 +1,3 @@
-
-   
 //1
 
 let dateNow = new Date();
@@ -30,6 +28,8 @@ console.log(`${(dateDiff / 1000 / 60 / 60 / 24  / 365).toFixed()} Years`);
 let dateEditted = new Date();
 
 dateEditted.setFullYear(1980);
+dateEditted.setMonth(0)
+dateEditted.setDate(1)
 dateEditted.setHours(0);
 dateEditted.setMinutes(0)
 dateEditted.setSeconds(1);
@@ -38,3 +38,5 @@ console.log(dateEditted);
 // Needed Output
 
 //"Tue Jan 01 1980 00:00:01 GMT+0200 (Eastern European Standard Time)"
+
+//3
