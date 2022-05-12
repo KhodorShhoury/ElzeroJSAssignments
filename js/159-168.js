@@ -40,3 +40,13 @@ console.log(dateEditted);
 //"Tue Jan 01 1980 00:00:01 GMT+0200 (Eastern European Standard Time)"
 
 //3
+
+let lastDayDate = new Date();
+lastDayDate.setDate(0)
+console.log(lastDayDate)
+
+const monthNames = ["January", "February", "March", "April", "May", "June",
+"July", "August", "September", "October", "November", "December"
+];
+
+console.log(`Previous Month is ${monthNames[lastDayDate.getMonth()]} and the last day is ${lastDayDate.getDate()}`)
