@@ -25,13 +25,9 @@ console.log(`${(dateDiff / 1000 / 60 / 60 / 24  / 365).toFixed()} Years`);
 "40 Years"
 */
 //2
-let dateEditted = new Date();
+let dateEditted = new Date(0);
 
 dateEditted.setFullYear(1980);
-dateEditted.setMonth(0)
-dateEditted.setDate(1)
-dateEditted.setHours(0);
-dateEditted.setMinutes(0)
 dateEditted.setSeconds(1);
 console.log(dateEditted);
 
