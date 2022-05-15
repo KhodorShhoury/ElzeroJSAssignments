@@ -44,3 +44,18 @@ const monthNames = ["January", "February", "March", "April", "May", "June",
 ];
 
 console.log(`Previous Month is ${monthNames[lastDayDate.getMonth()]} and the last day is ${lastDayDate.getDate()}`)
+
+
+//4
+
+
+let myBirtday2 = new Date("1982 10 25");
+console.log(myBirtday2)
+
+
+let myBirtday3 = new Date("1982@10@25");
+console.log(myBirtday3)
+
+
+let myBirtday4 = new Date("1982/10/25");
+console.log(myBirtday4)
