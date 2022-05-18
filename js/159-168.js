@@ -25,10 +25,8 @@ console.log(`${(dateDiff / 1000 / 60 / 60 / 24  / 365).toFixed()} Years`);
 "40 Years"
 */
 //2
-let dateEditted = new Date(0);
-
-dateEditted.setFullYear(1980);
-dateEditted.setSeconds(1);
+let dateEditted = new Date("80");
+dateEditted.setSeconds(1)
 console.log(dateEditted);
 
 // Needed Output
@@ -48,4 +46,43 @@ const monthNames = ["January", "February", "March", "April", "May", "June",
 console.log(`Previous Month is ${monthNames[lastDayDate.getMonth()]} and the last day is ${lastDayDate.getDate()}`);
 
 
-//4 
+
+
+//4
+
+
+let myBirtday2 = new Date("1982 10 25");
+console.log(myBirtday2)
+
+
+let myBirtday3 = new Date("1982@10@25");
+console.log(myBirtday3)
+
+
+let myBirtday4 = new Date("1982/10/25");
+console.log(myBirtday4)
+
+
+
+//6
+
+function* gen(){
+  let index = 14;
+  
+  while(true){
+    yield index *=11;
+  }
+}
+
+let generator = gen();
+
+console.log(generator.next()); // {value: 14, done: false}
+console.log(generator.next()); // {value: 154, done: false}
+console.log(generator.next()); // {value: 494, done: false}
+console.log(generator.next()); // {value: 1034, done: false}
+console.log(generator.next()); // {value: 1774, done: false}
+console.log(generator.next()); // {value: 2714, done: false}
+console.log(generator.next()); // {value: 3854, done: false}
+console.log(generator.next()); // {value: 5194, done: false}
+console.log(generator.next()); // {value: 6734, done: false}
+
