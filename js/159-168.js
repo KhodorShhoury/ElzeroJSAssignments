@@ -66,9 +66,15 @@ console.log(myBirtday4)
 
 //5
 
+const performanceTestStart = performance.now();
 
 
+// for(let i = 1 ;i < 99999 ;i++){
+//      console.log(i)
+// }
 
+const performanceTestEnd = performance.now()
+console.log(`Loop took ${performanceTestEnd - performanceTestStart} milliseconds.`);
 //6
 
 function* gen(){
