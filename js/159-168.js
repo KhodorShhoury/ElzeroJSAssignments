@@ -24,6 +24,8 @@ console.log(`${(dateDiff / 1000 / 60 / 60 / 24  / 365).toFixed()} Years`);
 "481 Months"
 "40 Years"
 */
+
+
 //2
 let dateEditted = new Date("80");
 dateEditted.setSeconds(1)
@@ -62,6 +64,9 @@ console.log(myBirtday3)
 let myBirtday4 = new Date("1982/10/25");
 console.log(myBirtday4)
 
+//5
+
+
 
 
 //6
@@ -86,3 +91,33 @@ console.log(generator.next()); // {value: 3854, done: false}
 console.log(generator.next()); // {value: 5194, done: false}
 console.log(generator.next()); // {value: 6734, done: false}
 
+
+
+
+//7
+
+function* genNumbers() {
+     yield* [1, 2, 2, 2, 3, 4, 5];
+   }
+   function* genLetters() {
+     yield* ["A", "B", "B", "B", "C", "D"];
+   }
+   
+   // Write Your Generator Function Here
+
+   function* genAll(){
+        yield* new Set(genNumbers());
+        yield* new Set(genLetters());
+   }
+   
+   let generator2 = genAll();
+   
+   console.log(generator2.next()); // {value: 1, done: false}
+   console.log(generator2.next()); // {value: 2, done: false}
+   console.log(generator2.next()); // {value: 3, done: false}
+   console.log(generator2.next()); // {value: 4, done: false}
+   console.log(generator2.next()); // {value: 5, done: false}
+   console.log(generator2.next()); // {value: "A", done: false}
+   console.log(generator2.next()); // {value: "B", done: false}
+   console.log(generator2.next()); // {value: "C", done: false}
+   console.log(generator2.next()); // {value: "D", done: false}
