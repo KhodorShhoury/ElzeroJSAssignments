@@ -127,3 +127,9 @@ function* genNumbers() {
    console.log(generator2.next()); // {value: "B", done: false}
    console.log(generator2.next()); // {value: "C", done: false}
    console.log(generator2.next()); // {value: "D", done: false}
+
+
+   //8 
+
+   // main.js File
+console.log(calc(modOne.numOne, modOne.numTwo, modOne.numThree)); // 60
