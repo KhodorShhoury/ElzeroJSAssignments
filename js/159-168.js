@@ -132,4 +132,14 @@ function* genNumbers() {
    //8 
 
    // main.js File
+   
+   
+   import * as modOne from "/mod-Two.js";
+   
+   import calc from "/mod-One.js";
+   
+   
+   
 console.log(calc(modOne.numOne, modOne.numTwo, modOne.numThree)); // 60
+
+console.log("gggtt")

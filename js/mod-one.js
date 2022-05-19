@@ -1,1 +1,4 @@
-console.log(calc(modOne.numOne, modOne.numTwo, modOne.numThree));
+export default function(a,b,c){
+  return a + b + c;
+}
+
