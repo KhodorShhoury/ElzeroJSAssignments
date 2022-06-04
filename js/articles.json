@@ -1,0 +1,37 @@
+[
+  {
+    "id" : 1,
+    "author" : "Ali",
+    "title" : "Title 1",
+    "Body" : "article number 1 Body",
+    "category" : "Designing"
+  },
+  {
+    "id": 2,
+    "author": "youssef",
+    "title": "Title 2",
+    "Body": "article number 2 Body",
+    "category": "gaming"
+  },
+  {
+    "id": 3,
+    "author": "ahmad",
+    "title": "Title 3",
+    "Body": "article number 3 Body",
+    "category": "music"
+  },
+  {
+    "id": 4,
+    "author": "fadi",
+    "title": "Title 4",
+    "Body": "article number 4 Body",
+    "category": "islamic"
+  },
+  {
+    "id": 5,
+    "author": "khodor",
+    "title": "Title 5",
+    "Body": "article number 5 Body",
+    "category": "programming"
+  }
+]
