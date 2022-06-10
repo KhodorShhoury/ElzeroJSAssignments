@@ -65,7 +65,7 @@ console.log(`${TabletTwo.fullDetails()}`);
 console.log(`${TabletThree.fullDetails()}`);
 // LG Serial is 250450650 And Size Is Unknown
 
-
+getComputedStyle
 //3
 //Edit The Class
 class User {
