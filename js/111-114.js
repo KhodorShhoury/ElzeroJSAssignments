@@ -1,4 +1,4 @@
-//2
+//1
 let fontType=document.querySelector("#fontType");
 let fontTypeOpt=document.querySelectorAll("select option")
 let fontColor=document.querySelector("#fontColor");
@@ -7,11 +7,11 @@ var testText=document.querySelector(".text");
 
 let fontSize=document.createElement("select");
 fontSize.id="fontSize";
-for(let i =16;i<=31;i++){
+for(let i =16;i <= 31; i++){
      let fontSizeOpt=document.createElement("option");
      fontSizeOpt.textContent=`${i}px`;
      fontSizeOpt.value=`${i}px`;
-     fontSize.appendChild(fontSizeOpt)
+     fontSize.appendChild(fontSizeOpt);
 }
 fontColor.after(fontSize);
 

@@ -1,7 +1,7 @@
 //1
 // let promptMsg = prompt("Print Number From – To", "Example: 5-20");
-// let numbers = promptMsg.split("-").sort((a,b)=>a-b);
-// for(let i=parseInt(numbers[0]);i<=parseInt(numbers[1]);i+){
+// let numbers = promptMsg.slice(9).split("-").sort((a,b)=>a-b);
+// for(let i=parseInt(numbers[0]);i<parseInt(numbers[1]);i++){
 //      console.log(i);
 // };
 
@@ -45,6 +45,7 @@
  function count(){
      eleDiv.textContent -=1;
      if(eleDiv.textContent=="0"){
+          clearInterval(counter)
         //  location.href = "https://elzero.org/";
      }
 }
@@ -52,8 +53,9 @@
 function count(){
      eleDiv.textContent -=1;
      if(eleDiv.textContent=="0"){
-       // window.open("https://elzero.org/","","width=100","height=100");
-        clearInterval(counter)
+          clearInterval(counter);
+         //window.open("https://elzero.org/","","width=100","height=100");
+        
      }
 }
 

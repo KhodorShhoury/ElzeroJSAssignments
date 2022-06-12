@@ -24,7 +24,10 @@ arr2 = ["Mohamed", "Gamal", "Amir"];
 arr3 = ["Haytham", "Shady", "Mahmoud"];
 
  finalArr= arr1.concat(arr2).concat(arr3);
+<<<<<<< HEAD
  console.log(finalArr);
+=======
+>>>>>>> e4807bb9da364bceeaf784cce4ae2028a7089073
  [c, , , , , , , a, b]=finalArr;
 
 console.log(`My Best Friends: ${a}, ${b}, ${c}`);

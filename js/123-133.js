@@ -60,7 +60,11 @@ console.log(numsOne.concat(numsTwo));
 console.log([...numsOne,...numsTwo]);
 
 console.log(Object.values(numsOne.concat(numsTwo),))
+<<<<<<< HEAD
 console.log(Array.of(...numsOne, ...numsTwo));
+=======
+console.log(Array.from(numsOne.concat(numsTwo)));
+>>>>>>> e4807bb9da364bceeaf784cce4ae2028a7089073
 
 numsOne.push(...numsTwo)
 console.log(numsOne)
@@ -70,4 +74,8 @@ console.log(numsOne)
 let n1 = [10, 30, 10, 20];
 let n2 = [30, 20, 10];
 
+<<<<<<< HEAD
   
+=======
+console.log([...new Set(n1+n2)])
+>>>>>>> e4807bb9da364bceeaf784cce4ae2028a7089073

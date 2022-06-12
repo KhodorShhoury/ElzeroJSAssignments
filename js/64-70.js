@@ -7,7 +7,7 @@ function getDetails(zName, zAge, zCountry) {
        // Ahmed ali => Ahmed A.
      }
      function ageWithMessage(zAge) {
-       return `Your Age Is ${zAge.slice(0,2)}`
+       return `Your Age Is ${zAge.split(" ")[0]}`
        // 38 Is My Age => Your Age Is 38
        // 32 Is The Age => Your Age Is 32
      }
